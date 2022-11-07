@@ -1,9 +1,14 @@
-import imageWeb from "./images/image-web-3-desktop.jpg";
+import imageWebDesktop from "./images/image-web-3-desktop.jpg";
+import imageWebMobile from "./images/image-web-3-mobile.jpg";
+
 const Main = () => {
   return (
     <main>
       <div className="img-wrapper">
-        <img src={imageWeb} alt="" />
+        <picture>
+          <source media="(min-width: 376px)" srcSet={imageWebDesktop} />
+          <img src={imageWebMobile} alt="Web" />
+        </picture>
       </div>
       <h1>The Bright Future of Web 3.0?</h1>
       <p>
