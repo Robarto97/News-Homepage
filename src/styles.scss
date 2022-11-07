@@ -45,6 +45,10 @@ header {
   li {
     font-weight: 400;
   }
+  a{
+    color: $darkGrayishBlue;
+
+  }
   a:hover {
     color: $softRed;
   }
@@ -208,6 +212,7 @@ footer {
     gap: 2rem;
     position: relative;
     z-index: 0;
+    overflow-x: hidden;
   }
 
   header {
